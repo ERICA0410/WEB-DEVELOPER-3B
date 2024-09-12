@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive Structure</title>
+    <link rel="stylesheet" href="../css/customstyle.css">
+</head>
+<style>
+    img{
+        border: 2.3px solid rgb(13, 228, 145);
+        border-radius: 12px;
+        box-shadow: 1px 2px 12px;
+    }
+    .image-div{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 50rem;
+        margin-inline: auto;
+        gap: 18px;
+        object-fit: cover;
+    }
+    .image-div > img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        transition: scale 350ms ease, opacity 350ms linear;
+    }
+    .image-div:has(img:hover) img:not(:hover){
+        scale: .8;
+        opacity: .7;
+    }
+  
+</style>
+<body>
+    <header>
+        <div>
+            <h1>College of Information and Computing Sciences</h1>
+            <h2>Bachelor of Science in Information System</h2>
+        </div>
+        <div class="container">
+            <a href="../Index.html">HOME</a> |
+            <a href="pages/about.html">ABOUT</a> |
+            <a href="pages/contactus.html">CONTACT US</a> |
+            <a href="pages/inquiry.html">ADMISSION</a> |
+            <a href="pages/profile.html">PROFILE</a> 
+            <button id="home_btn"><a href="pages/login.html">LOG IN</a></button>
+        </div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <br><a href="../pages/heading.html">Headings</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../pages/table.html">Tables</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../pages/forms.html">Forms</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../pages/image.html">Image</a><br><br>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="../pages/list.html">HTML List</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="./login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <article>
+            
+            <br><br><h3 ><b>MSU Image</b></h3><br><br>
+        <div class="image-div">
+                <img src="../pages/img/msu.jpg" alt="msu" width="400" height="200"><br>
+                <img src="../pages/img/marSU.jpg" alt="marSU" width="400" height="200"><br>
+                <img src="../pages/img/image copy.png" alt="image" width="400" height="200"><br>
+                <img src="../pages/img/image.png" alt="png" width="400" height="200"><br>
+        </div>
+        </article>
+    </section>
+    
+    <footer>
+        <hr>
+        <h1>MarSU</h1>
+        <div>
+            <a href="pages/refund.html">Refund Policy</a> |
+            <a href="pages/term.html">Terms of Use</a> |
+            <a href="pages/private.html">Privacy Policy</a> |
+            <a href="pages/faq.html">News</a> |
+            <a href="pages/affiliate.html">Affiliate</a>
+        </div>
+        <div>
+            <h4>&copy; 2024 MarSU Santa Cruz Campus, BSIS Student</h4>
+        </div>
+    </footer>
+</body>
+</html>
